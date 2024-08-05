@@ -1,0 +1,66 @@
+
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #ecf7fa;
+    color: #1e0940;
+    margin: 20;
+    padding: 20;
+  }
+  
+  
+  .navbar {
+    margin-bottom: 10px;
+  }
+  
+  
+  .container {
+    max-width: 1200px;
+    margin: 10 auto;
+    padding: 60 px;
+  }
+  
+  
+  .card {
+    border: 1px solid #0c3f6c;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(7, 23, 30, 0.1);
+    overflow: visible;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-title {
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #0a2747;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    padding: 10px 15px;
+    line-height: 1.6;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .row-cols-sm-2 > .col {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .row-cols-sm-2 > .col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  

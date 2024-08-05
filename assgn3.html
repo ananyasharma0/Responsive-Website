@@ -1,0 +1,43 @@
+<html>
+<body>
+    
+
+
+
+
+
+<p id="p1">Hello World!</p>
+<p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+<p>This is FSD Assignment 3</p>
+<p id="demo"></p>
+<p class = "intro">This is how we can use Javascript tags in HTML </p>
+<p class = "intro">This is very helpful</p>
+
+
+
+<img id="image" src="home1.jpg">
+<script>
+document.getElementById("image").src="home2.jpg";
+</script>
+<p>The original image was changed to home2.jpg</p>
+
+
+
+
+<script>
+document.getElementById("p1").innerHTML = "Hello World!";
+</script>
+<script>
+    var x = document.getElementsByTagName("p");
+    document.getElementById("demo").innerHTML = 
+    'The text in first paragraph (index 0) is: ' + x[0].innerHTML;
+</script>
+
+<script>
+    var y = document.getElementsByClassName("intro");
+    document.getElementbyId("demo").innerHTML = 'This is the text' +y[0].innerHTML;
+    </script>
+    
+
+</body>
+</html>
